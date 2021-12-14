@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer utilities {
+    .nav-item {
+        @apply py-3 text-gray-600  cursor-pointer  uppercase;
+    }
+    @variants hover {
+        .nav-item {
+            @apply hover:bg-white hover:text-black hover:filter hover:drop-shadow-md;
+        }
+    }
+}
